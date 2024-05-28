@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Gallery Add Images</h1>
+    <hr />
+    <div class="container">
+      <div class="imageCard">
+        <label for="inputFile0">
+          <input
+            type="file"
+            accept="image/*"
+            class="inputFile"
+            id="inputFile0"
+          />
+          <img src="images/Artboard 1.jpg" alt="ADD NEW IMAGE" />
+        </label>
+        <div class="imageNote">
+          <i class="fa-solid fa-grip-vertical"></i>
+          <input type="text" name="InputNote" />
+        </div>
+      </div>
+      <button id="addImageCard">+</button>
+    </div>
+
+    <div class="imageCard hidden" id="imageCardTemplate">
+      <label>
+        <input type="file" class="inputFile" accept="image/*" />
+        <img src="images/Artboard 1.jpg" alt="ADD NEW IMAGE" />
+      </label>
+      <div class="imageNote">
+        <i class="fa-solid fa-grip-vertical"></i>
+        <input type="text" name="InputNote" />
+      </div>
+    </div>
+  </body>
+</html>
